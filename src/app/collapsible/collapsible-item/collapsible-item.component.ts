@@ -1,7 +1,4 @@
-import {
-  Component,
-  Directive,
-  Input } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, Directive, ElementRef, Input } from '@angular/core';
 
  import { MzRemoveComponentHost } from '../../shared/remove-component-host/remove-component-host';
 
@@ -10,8 +7,19 @@ import {
   templateUrl: './collapsible-item.component.html',
   styleUrls: ['./collapsible-item.component.scss'],
 })
-export class MzCollapsibleItemComponent extends MzRemoveComponentHost {
+export class MzCollapsibleItemComponent extends MzRemoveComponentHost implements AfterViewInit {
   @Input() active: boolean;
+
+  constructor(
+    private changeDetectRef: ChangeDetectorRef,
+    public elementRef: ElementRef,
+  ) {
+    super(elementRef)
+  }
+
+  ngAfterViewInit() {
+    this.changeDetectRef.detectChanges();
+  }
 }
 
 // Declare the tags to avoid error: '<mz-collapsible-item-x>' is not a known element

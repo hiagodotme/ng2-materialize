@@ -26,6 +26,7 @@ import { MaterializeCssClassModule } from './materialize-css-class/materialize-c
 import { MediaModule } from './media/media.module';
 import { ModalModule } from './modal/modal.module';
 import { NavbarModule } from './navbar/navbar.module';
+import { PaginationModule } from './pagination/pagination.module';
 import { ParallaxModule } from './parallax/parallax.module';
 import { ProgressModule } from './progress/progress.module';
 import { RadioButtonModule } from './radio-button/radio-button.module';
@@ -49,39 +50,8 @@ import { ValidationModule } from './validation/validation.module';
     HttpModule,
     MalihuScrollbarModule.forRoot(),
     MarkdownToHtmlModule.forRoot(),
-    MaterializeModule.forRoot(),
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES),
-
-    // internal modules
-    BadgeModule,
-    ButtonModule,
-    CardModule,
-    CheckboxModule,
-    CollapsibleModule,
-    CollectionModule,
-    DatepickerModule,
-    DropdownModule,
-    HomeModule,
-    IconModule,
-    InputModule,
-    MaterializeCssClassModule,
-    MediaModule,
-    ModalModule,
-    NavbarModule,
-    ParallaxModule,
-    ProgressModule,
-    RadioButtonModule,
-    SelectModule,
-    SidenavModule,
-    SpinnerModule,
-    SwitchModule,
-    TabModule,
-    TextareaModule,
-    TimepickerModule,
-    ToastModule,
-    TooltipModule,
-    ValidationModule,
   ],
   declarations: [AppComponent],
   providers: [],

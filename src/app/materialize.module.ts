@@ -3,12 +3,12 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import * as Badge from './badge';
-import * as Button from './button';
-import * as Card from './card';
-import * as Checkbox from './checkbox';
-import * as Collapsible from './collapsible';
-import * as Collection from './collection';
+import { MzBadgeModule } from './badge';
+import { MzButtonModule } from './button';
+import { MzCardModule } from './card';
+import { MzCheckboxModule } from './checkbox';
+import { MzCollapsibleModule } from './collapsible';
+import { MzCollectionModule } from './collection';
 import * as Datepicker from './datepicker';
 import * as Dropdown from './dropdown';
 import * as Icon from './icon';
@@ -16,6 +16,7 @@ import * as Input from './input';
 import * as Media from './media';
 import * as Modal from './modal';
 import * as Navbar from './navbar';
+import { MzPaginationModule } from './pagination';
 import * as Parallax from './parallax';
 import * as Progress from './progress';
 import * as RadioButton from './radio-button';
@@ -32,24 +33,12 @@ import * as Tooltip from './tooltip';
 import * as Validation from './validation';
 
 const MZ_COMPONENTS = [
-  Badge.MzBadgeComponent,
-  Button.MzButtonDirective,
-  Card.MzCardActionDirective,
-  Card.MzCardComponent,
-  Card.MzCardContentDirective,
-  Card.MzCardTitleDirective,
-  Checkbox.MzCheckboxContainerComponent,
-  Checkbox.MzCheckboxDirective,
-  Collapsible.MzCollapsibleComponent,
-  Collapsible.MzCollapsibleItemBodyDirective,
-  Collapsible.MzCollapsibleItemComponent,
-  Collapsible.MzCollapsibleItemHeaderDirective,
-  Collection.MzAvatarDirective,
-  Collection.MzCollectionComponent,
-  Collection.MzCollectionHeaderComponent,
-  Collection.MzCollectionItemComponent,
-  Collection.MzCollectionLinkDirective,
-  Collection.MzSecondaryContentDirective,
+  MzBadgeModule,
+  MzButtonModule,
+  MzCardModule,
+  MzCheckboxModule,
+  MzCollapsibleModule,
+  MzCollectionModule,
   Datepicker.MzDatepickerContainerComponent,
   Datepicker.MzDatepickerDirective,
   Dropdown.MzDropdownComponent,
@@ -68,6 +57,7 @@ const MZ_COMPONENTS = [
   Navbar.MzNavbarComponent,
   Navbar.MzNavbarItemComponent,
   Navbar.MzNavbarItemContainerComponent,
+  MzPaginationModule,
   Parallax.MzParallaxComponent,
   Progress.MzProgressComponent,
   RadioButton.MzRadioButtonContainerComponent,

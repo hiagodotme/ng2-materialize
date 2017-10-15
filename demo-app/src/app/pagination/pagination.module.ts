@@ -1,22 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MzCheckboxModule } from 'ng2-materialize';
+import { MzPaginationModule } from 'ng2-materialize';
 
 import { CodeSnippetModule } from '../shared/code-snippet/code-snippet.module';
 import { PropertiesTableModule } from '../shared/properties-table/properties-table.module';
-import { CheckboxComponent } from './checkbox.component';
+import { PaginationComponent } from './pagination.component';
 
 @NgModule({
   imports: [
     BrowserAnimationsModule,
     CodeSnippetModule,
     CommonModule,
-    FormsModule,
-    MzCheckboxModule,
+    MzPaginationModule,
     PropertiesTableModule,
   ],
-  declarations: [CheckboxComponent],
+  declarations: [PaginationComponent],
 })
-export class CheckboxModule { }
+export class PaginationModule { }
