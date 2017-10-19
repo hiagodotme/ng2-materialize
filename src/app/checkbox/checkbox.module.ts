@@ -9,5 +9,9 @@ import { MzCheckboxDirective } from './checkbox.directive';
     MzCheckboxDirective,
     MzCheckboxContainerComponent,
   ],
+  exports: [
+    MzCheckboxDirective,
+    MzCheckboxContainerComponent,
+  ],
 })
 export class MzCheckboxModule { }

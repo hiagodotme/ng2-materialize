@@ -12,5 +12,9 @@ import { MzPaginationComponent } from './pagination.component';
     MzPaginationComponent,
     MzPaginationPageComponent,
   ],
+  exports: [
+    MzPaginationComponent,
+    MzPaginationPageComponent,
+  ],
 })
 export class MzPaginationModule { }

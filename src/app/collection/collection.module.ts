@@ -17,5 +17,13 @@ import { MzSecondaryContentDirective } from './secondary-content/secondary-conte
     MzCollectionHeaderComponent,
     MzSecondaryContentDirective,
   ],
+  exports: [
+    MzAvatarDirective,
+    MzCollectionComponent,
+    MzCollectionItemComponent,
+    MzCollectionLinkDirective,
+    MzCollectionHeaderComponent,
+    MzSecondaryContentDirective,
+  ],
 })
 export class MzCollectionModule { }

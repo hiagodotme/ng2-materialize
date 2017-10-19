@@ -75,12 +75,4 @@ export class CollapsibleComponent {
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
     },
   ];
-
-  add() {
-    this.simpleCollapsibleItems.push({
-      icon: 'flash',
-      header: 'test',
-      body: 'test',
-    })
-  }
  }
